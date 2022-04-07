@@ -1,0 +1,223 @@
+
+/* COMMON CSS */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.full-width{
+    width: 100%;
+}
+section{
+    margin-top:80px;
+}
+/* HEADER */
+header{
+    max-width: 95%;
+    padding-top: 20px;
+    position: fixed;
+    border-bottom: solid 1px grey;
+    height: 80px;
+    left: 50%;
+    transform:translateX(-50%);
+    background: white;
+}
+header a.brand{
+max-width: 100px;
+}
+header a img{
+    width: 100%;
+}
+.logo-name{
+    margin:0 0 0 20px;
+}
+
+.form-head{
+    color: rgb(51, 50, 50);
+    font-weight: bolder;
+}
+.form-desc{
+    font-weight: normal;
+    color: grey;
+    font-size: small;
+}
+.logo-name a{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+small{
+    font-size: 15px;
+    font-weight: normal;
+    color: grey;
+}
+small .span-class{
+color:#ea4c89;
+}
+
+/* CONTENT AREA */
+section .container{
+    width: 95%;
+    margin:0 auto;
+    
+}
+section .container .reg-form{
+    background-color: rgb(204, 173, 180);
+    padding: 50px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.form-left{
+    padding: 60px;
+}
+.form-left,.form-right{
+    background-color: white;
+    width: 50%;
+    height: 900px;
+    
+}
+input[type="text"] ,select {
+   
+    padding: 15px 20px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    width: 450px;
+    border-radius: 10px;
+    font-weight: normal;
+    color: gray;
+    
+  }
+  .form-right{
+      overflow: hidden;
+  }
+ .form-right .form-img{
+    width: 100%;
+    height: 900px;
+ }/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  .chechboxlabel{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+/* Hide the browser's default checkbox */
+.chechboxlabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  /* On mouse-over, add a grey background color */
+  .chechboxlabel:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .chechboxlabel input:checked ~ .checkmark {
+    background-color: green;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .chechboxlabel input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .chechboxlabel .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+ .checktext{
+     font-weight: normal;
+     font-size: small;
+     color: grey;
+     padding: 6px 33px;
+
+
+ }
+input ~ .zipcode{
+     width:200px;
+ }
+ input ~ .city{
+     width: 250px;
+ }
+ .arrow {
+    border: solid grey;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 5px;
+  }  
+  .left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+  .go-back{
+    font-weight: normal;
+    font-size: small;
+    color: grey;
+    width: 200px;
+    display: block;
+    float: left;
+    margin-top: 25px;
+  }
+.submitbttn{
+    padding: 12px 20px;
+    float: left;
+    margin: 5px 0 10px 45px;
+    border: none;
+    background: #015e56d5;
+    width: 200px;
+    border-radius: 8px;
+    font-weight: normal;
+    color:whitesmoke;
+}
+
+/* validation classes start here */
+#snamedemo,#indsdemo{
+    color: red;;
+    margin: 1px;
+    font-size: smaller;
+}
